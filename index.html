@@ -160,16 +160,6 @@
 									</form>
 								</section>
 
-								<script>
-									function openEmail() {
-										const nameElement = document.getElementById("nameInputField")
-										const subjectElement = document.getElementbyId("subjectInputField")
-										const messageElement = document.getElementById("messageInputField")
-										const emailSubject = nameElement.value + " " + subjectElement.value;
-
-										window.open("mailto:info.zugcat@zugcat.com?subject="+ emailSubject+"&body=" + messageElement.value)
-									}
-								</script>
 								<section>
 									<ul class="contact">
 										<li>
@@ -221,5 +211,15 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+								<script>
+									function openEmail() {
+										const nameElement = document.getElementById("nameInputField")
+										const subjectElement = document.getElementbyId("subjectInputField")
+										const messageElement = document.getElementById("messageInputField")
+										const emailSubject = nameElement.value + " " + subjectElement.value;
+
+										window.open("mailto:info.zugcat@zugcat.com?subject="+ emailSubject+"&body=" + messageElement.value)
+									}
+								</script>
 	</body>
 </html>
