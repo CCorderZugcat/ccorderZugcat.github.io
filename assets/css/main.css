@@ -2552,7 +2552,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #900d60;;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3047,7 +3047,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 0em;
 			-ms-flex: 1;
 		}
 
@@ -3060,6 +3060,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 				-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 				transition: opacity 1s ease, transform 1s ease;
+				min-width: 30em;
 				opacity: 1;
 			}
 
@@ -3256,7 +3257,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #961868;
 		}
 
 		.wrapper.style3-alt {
