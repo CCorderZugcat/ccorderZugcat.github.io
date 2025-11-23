@@ -3047,7 +3047,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 2em;
 			-ms-flex: 1;
 		}
 
@@ -3061,6 +3061,7 @@ input, select, textarea {
 				-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 				transition: opacity 1s ease, transform 1s ease;
 				opacity: 1;
+				min-width: 30em;
 			}
 
 		.spotlights > section:nth-child(2) {
@@ -3256,9 +3257,9 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #900d60;
 		}
-
+/* #b74e91 */
 		.wrapper.style3-alt {
 			background-color: #953d75;
 		}
