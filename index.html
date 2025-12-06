@@ -216,12 +216,15 @@
 
 								<script>
 									function openEmail() {
-										// const nameElement = document.getElementById("nameInputField")
-										// const subjectElement = document.getElementbyId("subjectInputField")
-										// const messageElement = document.getElementById("messageInputField")
-										// const emailSubject = nameElement.value + " " + subjectElement.value;
-										window.open("mailto:info.zugcat@zugcat.com")
-										// window.open("mailto:info.zugcat@zugcat.com?subject="+ emailSubject+"&body=" + messageElement.value)
+                                        const nameElement = document.getElementById("nameInputField");
+                                        const subjectElement = document.getElementById("subjectInputField");
+                                        const messageElement = document.getElementById("messageInputField");
+
+                                        // need to encode - browsers can detect encoded messages and automatically decode it
+                                        const encodedSubject = encodeURIComponent(nameElement.value + " " + subjectElement.value);
+                                        const encodedBody = encodeURIComponent(messageElement.value);
+
+                                        window.open("mailto:info@zugcat.com?subject=" + encodedSubject + "&body=" + encodedBody);
 									}
 								</script>
 	</body>
